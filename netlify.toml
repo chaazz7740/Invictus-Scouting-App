@@ -1,5 +1,8 @@
 [build]
   publish = "public"
 
+  [build.environment]
+    SECRETS_SCAN_OMIT_KEYS = "TEAM_CODE,ROBOTEVENTS_KEY"
+
 [functions]
   directory = "netlify/functions"
